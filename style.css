@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    background: #751de8;
+    overflow: hidden;
+}
+
+.game{
+    min-height: 100vh;
+    min-width: 100vw;
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    padding: 32px;
+    font-size: 32px;
+}
+
+.score{
+    min-height: 20vh;
+    width: 70vw;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-size: 32px;
+    background: #ca4bca66;
+    border-radius: 20px;
+}
+
+.display-score{
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.player-score, .computer-score{
+    text-align: center;
+}
+p{
+    margin-top: 20px;
+    font-size: 48px;
+}
+
+.buttons{
+    min-height: 10vh;
+    width: 50vw;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button{
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 16px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.5s ease;
+    outline: none;
+}
+
+button:hover{
+    background: #ffffff66;
+}
+
+.images{
+    min-height: 20vh;
+    min-width: 20vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+img{
+    height: 200px;
+}
+.computer-image{
+    transform: rotate(270deg);
+}
+.player-image{
+    transform: rotate(90deg);
+}
+
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background: #00000080;
+    transition: opacity 0.8s ease-in;
+    pointer-events: all;
+}
+
+.modal button{
+    font-size: 32px;
+}
+
+.reveal{
+    opacity: 1;
+}
+
+.disablebuttons{
+    pointer-events: none;
+}
+.move{
+    animation: 0.1s ease;
+}
+
+@keyframes animation{
+    from
+    {
+        transform: translateY(100px);
+    }
+    to
+    {
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
